@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+::-moz-selection {color: #f1f1e2; background-color: #eb2d1f;}
+
+::selection {color: #f1f1e2; background-color: #eb2d1f;}
+
+nav{
+    background-color: #1d1d1b;
+    /* padding: 20px, 20px, 20px, 20px; */
+    padding-bottom: 14px;
+    padding-top: 14px;
+}
+.nav_item{
+    display: inline;
+}
+.nav{
+    display: unset;
+    padding-left: 32%;
+}
+.nav_link{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    color: #919291;
+    text-decoration: none;
+    transition-delay: 20ms;
+    transition-duration: 1.5s;
+    padding-right: 2%;
+}
+.nav_link:hover{
+    color: #e8eee6;
+}
+.nav_title{
+    font-family: 'JetBrains Mono', 'Cascadia Code', 'Lucida Console', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 28px;
+    color: chartreuse;
+    text-decoration: none;
+    transition-delay: 20ms;
+    transition-duration: 1.5s;
+    padding-right: 10%;
+    padding-left: 2%;
+}
+.nav_title:hover{
+    color: #d7e0d6;
+}
+footer{
+    background-color: #1f201f;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+.title{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 36px;
+    color: chartreuse;
+    text-align: center;
+    padding-top: 12px;
+    /* padding-bottom: 12px;
+    text-decoration: underline;
+    text-decoration-thickness: 5px; */
+}
+body{
+    background-color: #161612;
+}
+.sub_heading{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 28px;
+    color: rgb(148, 236, 59);
+    text-align: center;
+}
+.warning{
+    font-family: 'Cascadia Code','Courier New', Courier, monospace,-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    color: #fa2727;
+    padding-left: 5px;
+    padding-top: 5px;
+}
+.warning_div{
+    margin-top: 10px;
+    background-color: #1b1a1a;
+    border-radius: 5px;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    padding-right: 20px;
+    padding-top: 10px;
+    margin-bottom: 12px;
+    margin-left: 6%;
+    margin-right: 6%;
+    /* text-align: center; */
+}
+.consent{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 18px;
+    color: rgb(0, 247, 255);
+    text-align: center;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+.continue_btn{
+    background-color: #0687ff;
+    border-width: 0px;
+    border-radius: 6px;
+    padding: 10px;
+}
+.link_btn{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 18px;
+    color: #e8eee6;
+    text-align: center;
+    text-decoration: none;
+}
+.content{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 18px;
+    color: #e8eee6;
+}
+.content_title{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 19px;
+    color: #42e230;
+}
+.link{
+    font-family: 'Cascadia Code', 'Courier New', Courier, monospace;
+    font-size: 18px;
+    color: #fa2727;
+}
+.title_2{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 48px;
+    color: chartreuse;
+    text-align: center;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-decoration: underline;
+    text-decoration-thickness: 5px;
+}
+@media (max-width: 767px) {
+    body {
+        margin-top: 40px;
+        margin-left: 32px;
+        margin-right: 16px;
+    }
+}
+@media (max-width: 544px) {
+    body {
+        margin-top: 40px;
+        margin-left: 32px;
+        margin-right: 16px;
+    }
+    .nav{
+        display: none;
+    }
+}

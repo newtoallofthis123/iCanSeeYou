@@ -1,0 +1,84 @@
+{% extends 'base.html' %}
+
+{% block body %}
+    <div>
+        <h1 class="title_2">The Creeper's Message</h1>
+        <p class="content" style="padding: 36px;">
+            Hello, <span class="content_title"> {{ host_name }} </span>. I a creeper and I would like to talk to you, will you talk with me?, I know you won't, because we haven't introduced ourselves. Hello I am Creeper. I basically creep. That is all you should know about me. Will you tell something about yourself? No, fine I will find some info about you, ha ha ha. Don't worry, no much. I am not that great at this stuff. I am still learning. ( Small reminder, this is a joke. )
+            <br><br>
+            Okay, so let's start from the basics, I can easily get your IP Address. It is no big deal. Wait a second. Oh, I got it, I know that it is <span class="content_title"> {{ ip_results["ip"] }} </span>. 
+            Okay, now that I have that, I will use a very popular api, called <a href="https://freegeoip.app" class="link">freegeoip</a>. It has many non nefarious proposes of course, but um, I can use it for this as well. I love the internet.
+            By the way, I got your country, <span class="content_title"> {{ ip_results["country_name"] }} </span>. It is a very beautiful country.
+            Oh, so you live in <span class="content_title"> {{ ip_results["region_name"] }} </span>. I think <span class="content_title"> {{ ip_results["region_name"] }} </span>'s capital is <span class="content_title"> {{ ip_results["city"] }} </span> right? Yes, I thought so.
+            Okay, I think I can now find your cooridinates, oh, I think I found them, <span class="content_title">  ( {{ ip_results["latitude"] }}, {{ ip_results["longitude"] }} )</span>.
+            Now, let me see if I get this right: It is <span class="content_title"> {{ time_zone_results["dayOfWeek"] }} </span> today right, so as the year is <span class="content_title"> {{ time_zone_results["year"] }} </span>, today is the <span class="content_title"> {{ time_zone_results["day"] }}th </span> of <span class="content_title"> {{ month_converter }} </span>.
+            Phew, for a second there, I thought I was wrong.
+            Anyway, let's continue. So where were we, right, I was going to tell you the time right now, not such big a deal, but you know, it is something, It is <span class="content_title"> {{ time_zone_results["time"] }} </span> right?
+            Yes, I knew I was right. By the way, I almost forgot I had your coordinates. So , fine, I won't come visit you, but can I atleast write to you? Yes, Thank You. I already have your info. I will address it to this address: <span class="content_title"> {{ ip_results["zip_code"] }}, {{ ip_results["region_code"] }} , {{ ip_results["country_code"] }}</span>. 
+            Is it right? I thought it would be. Anyway, where were we, right, can I come visit you? Oh, that's crossing boundaries? Okay. I would tell you more, but for now, I think this will be enough to scare you. Atleast untill I work on my skills.
+            <br><br>
+            Oh one more thing, You are seeing the below section becuase your javascript is enabled. If your javascript is not enabled, you will see random useless info down here or not see it at all.
+            <br><br>
+            <span id="browser_info"></span>
+        </p>
+        <hr>
+        <h1 class="title">Why is the Creeper's Message Important</h1>
+        <p class="content" style="padding: 36px;">
+            The creeper in this case is rather friendly right? That won't always be the case. In real life, the creeper can be anything, a website, a blog, a video, a picture, a friend, a real creeper or anyone. It is very hard to protect your self from this. I am only learning web development and if I could do this, trust me, anyone could. It is not very hard. I used 2 free api's, api's, which are free, <a href="https://freegeoip.app" class="link">freegeoip</a> and <a href="https://www.timeapi.io" class="link">timeapi</a>. They are obviously great tools which have many non nefarious use cases but, well, they can be used for this. Getting this data was not very hard. All it took was some time and effort and I had all I need. This is not to scare you and make you paranoid about the websites you visit, but to just show you what can be done 
+        </p>
+        <h1 class="title">What Else Can This Creeper Do</h1>
+        <p class="content" style="padding: 36px;">
+            In this, case I am not using a database, but if I did, it wouldn't take long. I could easily put all this information in a nice little table and return it as a dictonary to whoever I like ( I am not though ). There are legitimate use cases for this, but all I want to convey to you is that, this can be used for malicious stuff and to just be carfull. Previous;y in the message, you saw that I has your latitude and longitude, I can use those, to 
+            <ul>
+                <li class="content">Get the Weather Info for your area</li>
+                <li class="content">Pin point you using a maps api</li>
+                <li class="content">Get the details of all the places near you</li>
+            </ul>
+        </p>
+        <p class="content" style="padding: 36px;"> I can do much more, but I don't want to or to be honest, don't know how to yet. </p>
+        <h1 class="sub_heading">This is not meant to demoralize you, but instead to educate you.</h1>
+        <h1 class="title">What You Can Do</h1>
+        <p class="content" style="padding: 36px;">
+            You cannot do much to <span class="content_title">protect</span> yourself from such tracking, because, well, you can't. The only way to protect yourself a little, is to well:
+            <ul>
+                <li class="content">Not open any suspicious links in your email, although a lot worse could happen then.</li>
+                <li class="content">Try to know which websites you visit, do a simple <a href="https://virustotal.com" class="link">virustotal</a> check, see if it is https, all the little stuff like that matters</li>
+                <li class="content">As for the big tech tracking, you can't do much. Just hope for the best.</li>
+                <li class="content">Try to clear out your cache and unneccessary cookies either on exit or whenever you can.</li>
+                <li class="content">Disable Javascript wherever possible, a lot more can be done using it as it is well suited for interaction with the browser</li>
+            </ul>
+        </p>
+        <h1 class="sub_heading" style="padding-top: 12px; padding-bottom: 12px;">Want a better and informative scare? visit <a href="https://coveryourtracks.eff.org/" class="link" style="font-size: 28px;">coveryourtracks</a>, a free tool from the EFF.</h1>
+        <h1 class="title">What You Can Do To Help</h1>
+        <p class="content" style="padding: 36px;">
+            Well, I am a privacy enthuasist and well, I just wanted to have a tool, that scares people the traditional way, in the form of a creepy guy. If you know a little about how the internet works, panopticlick would be enough and informative enough to scare you, but for people who don't show them this tool, and specifically tell them, that this was done by a novice, someone who is learning, if I could do this, trust me anyone could. So please educate people about privacy by showing them this website.
+        </p>
+        <h1 class="title">About I Can C You</h1>
+        <p class="content" style="padding: 36px;">
+            I Can C(reep) You is a free and open source tool written in python and a little javascript. It is registered under the <a href="https://newtoallofthis123.github.io/license" class="link">MIT License</a>. You are free to use the code and it's assets however you like as long as they themselves are open source having the MIT License
+            <br><br>
+            You can even check the code to make sure that I don't track you. You can find it on <a href="https://github.com/newtoallofthis123/iCanSeeYou" class="link">github</a>. I only wanted to show you what can be done, but not actually track you and use your data.
+            <br><br>
+            Please do not use this code for nefarious purposes. Pranks are fine but, please don't use them with malicious intent. This is purely an educational tool.
+            <br><br>
+            The Creeper Monologue is inspired by the Netflix Show <a href="https://www.imdb.com/title/tt7335184/" class="link">You</a>. I think the character monologue there was really suited for what I was going for here.
+            <br><br>
+            <span class="content_title">If you have any problems, with the website, please email me or dm me on matrix, I will gladly show you that there is no ill intent here.</span>
+        </p>
+    </div>
+    <script>
+        var browser_info_showcase = document.getElementById("browser_info");
+        if (navigator.doNotTrack == 1) {
+            var doNotTrack_str = "Enabled";
+        } else if (navigator.doNotTrack == 0) {
+            var doNotTrack_str = "Disabled"
+        }
+        if (navigator.cookieEnabled == 1) {
+            var cookiesEnabled_str = "Enabled";
+        } else if (navigator.cookieEnabled == 0) {
+            var cookiesEnabled_str = "Disabled"
+        }
+        txt = "Are you using " + navigator.platform + " ?" + "Okay, did you know that " + navigator.appCodeName + " " + navigator.appVersion + " browser is very nice. Aw, this is nice, you have do not track " + doNotTrack_str + " like that's going to stop me. Oh you have cookies " + cookiesEnabled_str + " ? Don't worry, I use none. Oh you use your computer in " + navigator.language + "? That's nice to know. "
+        browser_info_showcase.innerHTML=txt;
+    </script>
+{% endblock %}

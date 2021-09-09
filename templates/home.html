@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block body %}
+    <div>
+        <h1 class="title">I Can See You</h1>
+        <h2 class="sub_heading">See how easy it is to get your info on the web</h2>
+        <div class="warning_div">
+            <p class="warning">
+                This is a warning, all the info you get from the website is your property. I didn't set it up to collect the data and I can't know about it. I am a privacy enthuasit myself and this is just to show you how easy it is for websites to pin point you and get your info. The beauty of it leis in the fact that I am a learner. I am still learning flask. Using simple <u>free</u> api's, I will show you your exact location, to the coordinates.
+                <br><br>
+                If you don't trust me when I say, I can't collect your data and you know python and basic html, you can check the <a href="" class="link">code</a> out. You will not find anything through which I can collect your data.
+                <br><br>
+                Please, if you are not comfortable with this, you can exit, no harm, but check it out, you will know how easy it is track you. If you want to educate someone about the importance of tech privacy, show this to them. It will surely spook them out. With that being said, this website is completely open source. So please don't worry, I will not use your data.
+                <br><br>
+                Any legal complaints, <a href="" class="link">contact</a> me.
+                <br><br>
+                One last thing, for all you people who think I am doing this with javascript, you can go ahead and disable it, it won't matter as I am using python, so, sorry I guess.
+                <br><br>
+                If you are easily spooked, don't visit this website.
+            </p>
+        </div>
+        <p class="consent">I partially trust this website and I <a href="./terms" class="link">constent</a> to be shown the info and I trust that it will not be used for nefarious stuff by the author willingly.</p>
+        <div style="text-align: center;">
+            <button class="continue_btn" style="margin-bottom: 2%;"><a href="/results" class="link_btn">I Constent and I want to see this ▶</a></button>
+        </div>
+    </div>
+{% endblock %}
